@@ -4,7 +4,7 @@
     right: 0;
     bottom: 0;
     top: 0;
-    overflow: hidden;
+    overflow: hidden; /* possibly change this to overflow: scroll; */
   }
   .header {
     top: 0;
