@@ -46,6 +46,7 @@ const ToShareButton = () => {
   return (
     <Button
       style={buttonStyle} tag={Link} type="Map" to={tempUrl} target="_blank">
+        <span style={{color: "#000"}}>To Map </span>
         <img className={styles['share-button']} src={shareIcon} alt=""/>
     </Button>
   )
@@ -53,9 +54,9 @@ const ToShareButton = () => {
 const SavedResourcePanel = () => {
 
     return (
-      <div>
+      <div style={{borderLeft: "#6c757d"}}>
         <Card>
-          <CardHeader>Saved Resources
+          <CardHeader style={{backgroundColor: "#6c757d", color: "#fff"}}>Saved Resources
           <span>
             <Route exact path='/admin' component={ToShareButton} />
           </span>
